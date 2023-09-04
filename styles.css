@@ -1,0 +1,226 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('laboratorio.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Menú de navegación */
+.nav {
+    background-color: #003366;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-menu li.active {
+    font-weight: bold;
+    color: #00aaff;
+}
+
+/* Contenido de las secciones */
+.content-section {
+    display: none;
+    padding: 30px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de perfil */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #003366;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* Estilos de los enlaces */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de investigación */
+.project-slider {
+    display: flex;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+.project-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.project-card p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prev-button, .next-button {
+    padding: 8px 15px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #002655;
+}
+
+/* Estilos para la sección de docencia */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.course-card a {
+    display: inline-block;
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.course-card a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de recursos y enlaces */
+.resource-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.resource-category {
+    flex: 0 0 calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resource-category h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.resource-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-category ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.resource-category a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.resource-category a:hover {
+    text-decoration: underline;
+}
+
